@@ -1,0 +1,58 @@
+
+body {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: $body-color;
+	font-size: 1em;
+	line-height: 1.8;
+	background: $body-bg;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	:link, :visited {
+		text-decoration: none;
+		color: $link1;
+		outline: 0;
+		@include transition(all 0.2s ease-in);
+	}
+	:active, :hover {
+		color: $link2;
+		text-decoration: none;
+	}
+	img {
+		border: 0;
+	}
+}
+
+label,p {
+	font-size: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Oxygen", Verdana, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	letter-spacing: -0.2em;
+	font-size: 3.5em;
+	line-height: 50px;
+}
+
+//horizontal breaks
+hr {
+	border: 0;
+	position: relative;
+	background: rgba(0,0,0, 0.5);
+	height: 3px;
+	margin: 0 0 40px;
+}
+
+::moz-selection, ::selection {
+	background: $dark-turq;
+	text-shadow: none;
+}
