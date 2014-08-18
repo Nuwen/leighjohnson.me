@@ -118,7 +118,7 @@ a.navbar-brand i {
     color: #12bebd;
 }
 
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:active,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:active,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
     color: #12bebd;
     background: 0 0;
     -webkit-transition: color .5s;

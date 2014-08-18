@@ -38,7 +38,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	letter-spacing: -0.2em;
 	font-size: 3.5em;
 	line-height: 50px;
 }
@@ -55,4 +54,53 @@ hr {
 ::moz-selection, ::selection {
 	background: $dark-turq;
 	text-shadow: none;
+}
+
+
+// Span colors
+.txt-wht {
+	font-weight: 700;
+	color: #fff;
+}
+
+.txt-pnk {
+	font-weight: 700;
+	color: $light-pink;
+}
+
+.txt-turq {
+	font-weight: 700;
+	color: $dark-turq;
+}
+
+// section tyles
+
+// light bg, dark fonts
+%section-container-light {
+	background: $body-bg;
+	padding: 45px 0;
+
+	h1 {
+		margin-bottom: 75px;
+	}
+
+}
+
+// dark bg, light fonts
+%section-container-dark {
+	color: #fff;
+
+	h1 {
+		margin-bottom: 75px;
+	}
+}
+
+//boostrap grid stuff
+
+.container {
+	max-width: 980px;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
 }

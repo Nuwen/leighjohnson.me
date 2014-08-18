@@ -1,0 +1,22 @@
+.btn-primary {
+	background: $dark-turq;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	border: 1px solid $dark-turq;
+	padding: 10px 24px;
+	margin-right: 10px;
+
+	@include transition(all 0.5s ease);
+}
+
+.btn-primary:active, .btn-primary:hover {
+	background: lighten($dark-turq, 10%);
+	border: solid 1px $dark-turq;
+
+}
+
+.btn-default {
+	
+}

@@ -1,6 +1,9 @@
 #navbar-wrapper {
-	background: $dark-brown;
 	width: 100%;
+}
+
+.sticky-wrapper {
+	background: $nav-bg;
 }
 
 .navbar {
@@ -8,26 +11,42 @@
 }
 
 .navbar-default {
+	text-decoration: none;
 	border: 0;
-	background: $dark-brown;
+	background-color: $nav-bg;
 	text-transform: uppercase;
 	display: inline-block;
 	position: fixed;
-	color: $beige;
+	color: $nav-color;
 	padding: 15px 0;
 
 	.navbar-nav>li>a{
 		padding-top: 20px;
 		height: 60px;
-		color: $beige;
+		color: $nav-color;
 	}
 
 	.navbar-logo {
+		text-decoration: none;
+		color: $nav-color;
+		font-size: 30px;
+		font-family: "Oxygen", sans-serif;
+		line-height: 40px;
+		padding: 28px 15px;
+		@include transition(color 0.5s);
+		@include center(y)
 
 	}
+
+	a {
+		@include transition(color 0.5s);
+	}
+	@include transition(color 0.5s);
+
 }
 
 .navbar-nav {
+	text-align: center;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
@@ -35,4 +54,26 @@
 	float: right;
 	font-size: 1.5em;
 	font-weight: 700;
+	@include transition(color 0.5s);
+
+
 }
+
+.navbar-default a.navbar-brand:active,.navbar-default a.navbar-logo:hover {
+    color: $nav-hover;
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:active,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
+	color: $nav-hover;
+	background: 0 0;
+}
+.nav-effect a {
+	@include transition(color 0.3s);
+
+}
+.navbar-default, .navbar-nav > li > a {
+
+}
+
+.navbar-collapse {
+	box-shadow: none;}

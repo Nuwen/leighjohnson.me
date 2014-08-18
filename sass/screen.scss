@@ -1,2 +1,17 @@
 
 @import "bootstrap";
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+@import "partials/nav";
+@import "partials/buttons";
+
+// sections styles
+
+@import "partials/welcome";
+@import "partials/about";
+@import "partials/services";
+@import "partials/portfolio";
+@import "partials/contact";
+@import "partials/blog-teaser";

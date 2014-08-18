@@ -1,0 +1,23 @@
+
+#welcome-section {
+	background: $welcome-bg;
+	padding: 45px 0;
+}
+
+#welcome-section h1 {
+}
+
+#welcome-section p {
+	font-size: 1.6em;
+	margin: 25px 0;
+}
+
+.btn-about, .btn-portfolio {
+	background: $welcome-bg;
+	border: 2px solid $body-color;
+}
+
+.btn-about:hover, .btn-portfolio:hover {
+	background: $body-color;
+	border: 2px solid $body-color;
+}

@@ -5,17 +5,27 @@ $dark-turq: #3FB8AF;
 $light-turq: #7FC7AF;
 $light-pink: #FF9E9D;
 $dark-pink: #FF3D7F;
-$beige: #DAD8A7;
-$dark-brown: #3B3A1D;
 
+$dark-grey: #333333;
+$light-green: #96CB5F;
+$light-yellow: #EDDE0F;
+$orange: #F67233;
 
 
 //general styles 
 $body-color: #333;
-$body-bg: #DAD8A7e; //or #1e1e1e #eee
+$body-bg: #eee; //or #1e1e1e #eee
 
 $link1: $dark-turq;
 $link2: #666;
 
 // nav
+$nav-bg: $dark-grey;
 $nav-color: #fff;
+$nav-hover: $dark-turq;
+
+
+//sections
+
+$welcome-bg: $dark-turq;
+

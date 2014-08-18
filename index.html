@@ -12,10 +12,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic|Oxygen:400,700' rel='stylesheet' type='text/css'>
-<!-- Bootstrap core styles -->
 
+<!-- Bootstrap core styles -->
+<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+<!-- custom styles -->
+<link href='css/screen.css' rel='stylesheet' type='text/css'>
 <!-- CSS Animate -->
+<link href='css/animate.css' rel='stylesheet' type='text/css'>
 <!-- Magnific Popup -->
+<link href='css/magnific-popup.css' rel='stylesheet' type='text/css'>
 <!-- Other misc styles-->
 <!-- Fonts -->
 </head>
@@ -27,7 +32,7 @@
 				<div class="navbar-header">
 
 				<!-- Mobile toggle -->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar collapse">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="bar"></span>
 					<span class="bar"></span>
 					<span class="bar"></span>
@@ -35,7 +40,7 @@
 				<a class="navbar-logo home-brand"	href="#">Leigh Johnson</a>
 				</div>
 				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav" id="main-menu">
+					<ul class="nav navbar-nav nav-pill" id="main-menu">
 						<li><a href="#navbar-wrapper">Home</a></li>
 						<li><a href="#about-section">About</a></li>
 						<li><a href="#services-section">Services</a></li>
@@ -50,18 +55,19 @@
 	</div> <!-- / #navbar-wrapper -->
 
 	<!-- begin #welcome-section -->
-	<section id="welcome-section" class="welcome-section">
+	<section id="welcome-section">
 		<div class="container">
 			<div class="row">
 			<div class="col-md-6 col-xs-12 bounceInLeft animated">
-				<h1>Hiya! I'm Leigh Johnson {Developer, Designer, Artist}</h1>
+				<h1>Hiya! I'm <span class="txt-wht">Leigh Johnson</span></h1>
+				<h2><span class="txt-pnk">{ </span>Developer, Designer, Artist <span class="txt-pnk">}</span></h2>
 				<p>I do the stuff with the things. What things? Code things. This is tempory ipsum copy until I finalize what this section will say. It's the first thing readers see, so make it good.</p>
 				<a href="#" class="btn btn-primary btn-about">About Leigh</a>
 				<a href="#" class="btn btn-primary btn-portfolio">My Work</a>
 			</div>
 			<div class="col-md-6 col-xs-12 bounceInRight animated">
 				<div class="welcome-bg">
-						<img src="img/welcome.png" alt="" />
+						<img src="http://placehold.it/650x650" alt=""></img>
 
 				</div>
 			</div>	
@@ -70,35 +76,29 @@
 	</section> <!-- / #welcome-section -->
 
 	<!-- begin #about-section -->
-	<section id="#about-section">
+	<section id="about-section">
 		<div class="container about-section">
 			<div class="row">
-				<div class="col-md-offset-1 col-md-10 col-cs-12">
-				<h1>Who is Leigh? That's me!</h1>
+				<div class="col-md-offset-1 col-md-10 col-cs-12 animated rubberBand">
+				<h1>Learning is my passion - challenge my limits. Let's build something new. </h1>
 				</div>
-				<div clas="col-md-offset-1 col-md-10 col-xs-12">
-				<h2>About Leigh</h2>
-				<p>Leigh enjoys smiling, reading, listening, tinkering, and sketching. Sometimes she gets wrapped up in her head, but she always come back (so far). Yoga & Raspberry Pi are Leigh's new addictions. Check out her <a href="#">posts about them</a>.</p>
-				</div>
-				<div class="skill-wrapper"> <!-- .team-wrapper -->
+				<div class="skill-wrapper"> 
 					<div class="col-md-offset-1 col-md-10 col-cs-12">
 					<figure class="box-inner">
-						<img alt="HTML5 & CSS" class="img-circle" src="">
-						<h3>HTML5</h3>
-						<div class="title">Super Competent</div>
-						<div class="skill-examples">  <!-- .team-social -->
+						<img alt="HTML5 & CSS" class="img-circle" src="http://placehold.it/200x200">
+						<h3>Front-End</h3>
+						<div class="skill-examples"> 
 						 <ul>
-							<li>One</li>
-							<li>Two</li>
-							<li>Three</li>
+							<li>HTML & CSS (SASS)</li>
+							<li><a href="#">jQuery & Javascript</a></li>
+							<li><a href="#">Bootstrap</a>, Foundation</li>
 						 </ul>
 						</div>
 					</figure>
 					<figure class="box-inner">
-						<img alt="Javascript" class="img-circle" src="">
-						<h3>Javascript</h3>
-							<div class="title">Comfortable</div>
-							<div class="skill-examples">  <!-- .team-social -->
+						<img alt="Javascript" class="img-circle" src="http://placehold.it/200x200">
+						<h3>Back-End</h3>
+							<div class="skill-examples"> 
 							 <ul>
 								<li>One</li>
 								<li>Two</li>
@@ -106,14 +106,30 @@
 							 </ul>
 							</div>
 					</figure>
+					<figure class="box-inner">
+						<img alt="Javascript" class="img-circle" src="http://placehold.it/200x200">
+						<h3>Design & Docs</h3>
+							<div class="skill-examples"> 
+							 <ul>
+								<li>One</li>
+								<li>Two</li>
+								<li>Three</li>
+							 </ul>
+							</div>
+					</figure>
+
 					</div>
 				</div>
 			</div>	
+			<div clas="col-md-offset-1 col-md-10 col-xs-12">
+				<p>Leigh enjoys smiling, reading, listening, tinkering, and sketching. Sometimes she gets wrapped up in her head, but always comes back (so far). Yoga & Raspberry Pi are Leigh's new addictions. Check out her <a href="#">posts about them</a>.</p>
+				</div>
 		</div>						
 	</section> <!-- / #about-section -->
 
 	<!-- begin #services-section -->
 	<section id="services-section">
+		<div class="container services-section">
 		<div class="row">
 			<div class="col-md-offset-1 col-md-10 col-xs-12">
 			<h1>What do you do?</h1>
@@ -152,10 +168,10 @@
 	<div class="container portfolio-section">
 		<div class="row">
 			<div class="col-md-offset-1 col-md-10 col-cs-12">
-			<h1>Here's some of my recent work. Enjoy, and use it freely.</h1>
+			<h1>Recent Work</h1>
 			</div>
 			<div class="cold-md-offset-1 col-md-10 col-xs-12">
-				<div id="#grid-controls-wrapper">
+				<div id="grid-controls-wrapper">
 				<ul class="nav nav-pills center-pills grid-controls">
 					<li>Branding</li>
 					<li>Games</li>
@@ -166,39 +182,39 @@
 				</div>
 			</div>
 			<div class="col-md-offset-1 col-md-10 col-xs-12">
-			<ul id="#grid" class="grid wrapper">
-				<li class="cold-md-5 mix web">
+			<ul id="grid" class="grid wrapper">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
 						<img src="http://placehold.it/370x250" alt=""></a></li>
-				<li class="cold-md-5 mix web">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
 						<img src="http://placehold.it/370x250" alt=""></a></li>
-				<li class="cold-md-5 mix web">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
 						<img src="http://placehold.it/370x250" alt=""></a></li>
-				<li class="cold-md-5 mix web">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
 						<img src="http://placehold.it/370x250" alt=""></a></li>
-				<li class="cold-md-5 mix web">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
 						<img src="http://placehold.it/370x250" alt=""></a></li>
-				<li class="cold-md-5 mix web">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
 						<img src="http://placehold.it/370x250" alt=""></a></li>
 
-				<li class="cold-md-5 mix web">
+				<li class="col-md-5 mix web">
 					<a href="http://placehold.it/500x500" class="popup-image" title="A cool project description">
 						<div class="overlay"><span>A cool project</span><i class="icon-search"></i>
 						</div>
@@ -210,13 +226,13 @@
 	</section> <!-- / #portfolio-section -->
 
 	<!-- begin #blog-section -->
-	<section id="#blog-teaser-section">
+	<section id="blog-teaser-section">
 		<div class="container blog-teaser-section">
 		<div class="cold-mdoffset-1 cold-md-10 cold-xs-12">
 		<h1>Here's an iframe containing a hook to my recent blog posts. I haven't figured out a better way to do this yet. Maybe need to author an API.</h1>
 		</div>
 		<div class="col-md-offset-1 cold-md-10 col-cs-12">
-			<div id="#blog-controls-wrapper">
+			<div id="blog-controls-wrapper">
 				<ul class="nav nav-pills center-pills blog-controls">
 					<li>Python</li>
 					<li>Raspberry Pi</li>
