@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?byiyft');
+	src:url('../fonts/icomoon.eot?#iefixbyiyft') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?byiyft') format('woff'),
+		url('../fonts/icomoon.ttf?byiyft') format('truetype'),
+		url('../fonts/icomoon.svg?byiyft#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-laptop:before {
+	content: "\e001";
+}
+.icon-desktop:before {
+	content: "\e002";
+}
+.icon-tablet:before {
+	content: "\e003";
+}
+.icon-phone:before {
+	content: "\e004";
+}
+.icon-mug:before {
+	content: "\e609";
+}
+.icon-cancel:before {
+	content: "\e60b";
+}
+.icon-layout:before {
+	content: "\e60a";
+}
+.icon-mouse:before {
+	content: "\e613";
+}
+.icon-stack:before {
+	content: "\e614";
+}
+.icon-ruler:before {
+	content: "\e615";
+}
+.icon-ruler2:before {
+	content: "\e616";
+}
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-steam:before {
+	content: "\e602";
+}
+.icon-github:before {
+	content: "\e603";
+}
+.icon-arrow-up:before {
+	content: "\e600";
+}
+.icon-chrome:before {
+	content: "\e604";
+}
+.icon-firefox:before {
+	content: "\e605";
+}
+.icon-IE:before {
+	content: "\e606";
+}
+.icon-opera:before {
+	content: "\e607";
+}
+.icon-safari:before {
+	content: "\e608";
+}
+.icon-pencil:before {
+	content: "\e60d";
+}
+.icon-envelope:before {
+	content: "\e60e";
+}
+.icon-user:before {
+	content: "\e60f";
+}
+.icon-download:before {
+	content: "\e60c";
+}
+.icon-microscope:before {
+	content: "\f089";
+}
+.icon-puzzle:before {
+	content: "\f0c0";
+}
+.icon-screen:before {
+	content: "\e617";
+}
+.icon-mobile:before {
+	content: "\e618";
+}
+.icon-tablet2:before {
+	content: "\e619";
+}
+.icon-bug:before {
+	content: "\e61a";
+}
+.icon-close:before {
+	content: "\e61e";
+}
+.icon-twitter:before {
+	content: "\e610";
+}
+.icon-deviantart:before {
+	content: "\e611";
+}
+.icon-mobile2:before {
+	content: "\e61b";
+}
+.icon-quote:before {
+	content: "\e61c";
+}
+.icon-bolt:before {
+	content: "\e61d";
+}
+.icon-list:before {
+	content: "\e61f";
+}
+.icon-arrow-right:before {
+	content: "\e612";
+}

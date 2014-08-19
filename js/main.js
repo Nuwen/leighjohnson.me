@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    
+    $(".navbar-toggle").click(function() {
+        $('.navbar-toggle').toggleClass('icon-close');
+         $('.navbar-toggle').toggleClass('icon-list');
+    });
     $(".navbar").sticky({
         topSpacing: 0
     }), $("#main-menu").onePageNav({

@@ -1,18 +1,41 @@
 .portfolio-section {
+
 	@extend %section-container-light;
 	background: #fff;
+	text-align: center;
+	h1 {
+	}
 }
 
 // Isotope grid
 
-#grid-controlers-wrapper {
-	margin: 25px 0;
-
+#grid-controls-wrapper {
+	text-align: center;
 	.nav-pills>li {
-		font-size: 1.3em;
+		text-align: center;
+		margin: 10px 0;
+		display: inline-block;
+		font-size: 2em;
 		font-weight: 600;
 		padding: 0 25px 0 0 ;
+
+		a {
+			color: $body-color;
+			@include transition(all 0.3s ease-in-out);
+		}
+		a:hover {
+			color: #fff;
+			background: $light-pink;
+		}
+		.current {
+			color: #fff;
+		}
 	}
+}
+
+.nav-pills > li.active > a {
+	color: #fff;
+	background: $dark-turq;
 }
 
 .center-pills{
@@ -20,10 +43,10 @@
 }
 
 #grid {
-	margin: 0;
+	display: block;
+	margin: 0 auto;
 	padding: 0;
-	width: 800px;
-	margin-left: -20px;
+	width: 100%;
 	list-style: none;
 }
 
@@ -37,6 +60,10 @@
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
+
+	width: 47%;
+	margin-left: 2%;
+
 
 	img {
 		width: 100%;
@@ -59,13 +86,33 @@
 	}
 
 	.overlay span {
-		font-size: 2em;
+		color: #fff;
+		font-size: 2.2em;
 		display: block;
 		padding-top: 20%;
 		padding-bottom: 4%;
 	}
 
 	.overlay i {
+		font-size: 3.5em;
 		color: #fff;
 	}
 }
+
+#grid li:nth-child(even){
+	.overlay {
+		background: $dark-turq;
+	}
+}
+#grid li:nth-child(odd){
+	.overlay{
+	background: $light-pink;}
+}
+
+.isotope, .isotope-item {
+	@include transition(all .7s ease);
+}
+.isotope {
+	@include transition-property(height, width);
+    }
+

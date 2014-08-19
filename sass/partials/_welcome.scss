@@ -1,5 +1,6 @@
 
 #welcome-section {
+	text-align: center;
 	background: $welcome-bg;
 	padding: 45px 0;
 }
@@ -15,6 +16,7 @@
 .btn-about, .btn-portfolio {
 	background: $welcome-bg;
 	border: 2px solid $body-color;
+	margin-bottom: 20px;
 }
 
 .btn-about:hover, .btn-portfolio:hover {

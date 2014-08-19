@@ -10,6 +10,23 @@
 	width: 100%;
 }
 
+.navbar-toggle {
+	color: #fff;
+	height: 45px;
+	width: 45px;
+	font-size: 2.2em;
+	text-align: center;	
+	
+	.icon-close, .icon-list {
+		@include center;
+	}
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: $light-pink;
+}
+
+
 .navbar-default {
 	text-decoration: none;
 	border: 0;
@@ -29,13 +46,18 @@
 	.navbar-logo {
 		text-decoration: none;
 		color: $nav-color;
-		font-size: 30px;
+		font-size: 35px;
+		padding-left: 20px;
 		font-family: "Oxygen", sans-serif;
 		line-height: 40px;
-		padding: 28px 15px;
+		margin-top: 7px;
+		position: absolute;
 		@include transition(color 0.5s);
-		@include center(y)
 
+		@media screen and (max-width: $mama-bear) {
+			font-size: 28px;
+			padding-left: 5px;
+		}
 	}
 
 	a {
@@ -59,8 +81,12 @@
 
 }
 
-.navbar-default a.navbar-brand:active,.navbar-default a.navbar-logo:hover {
+.navbar-default a.navbar-brand:active,.navbar-default  {
     color: $nav-hover;
+}
+
+a.navbar-logo:hover {
+	color: $light-pink;
 }
 
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:active,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
@@ -76,4 +102,5 @@
 }
 
 .navbar-collapse {
+	text-align: center;
 	box-shadow: none;}

@@ -1,8 +1,9 @@
-
+@import "bourbon/bourbon";
 @import "bootstrap";
 
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/_icons";
 @import "partials/base";
 @import "partials/nav";
 @import "partials/buttons";

@@ -4,7 +4,9 @@
 }
 
 .form-control {
+	background: $dark-grey2;
 
+	border: 3px solid $dark-grey2;
 	display: block;
 	width: 100%;
 	height: 34px;
@@ -15,9 +17,23 @@
 	border-radius: 4px;
 
 	box-shadow: inset 0 1px 1px rgba(0,0,0, 0.70);
-	@include transition (all 0.15s ease-in-out);
+	@include transition (all 0.25s ease-in-out);
 }
 
 .form-horizontal button{
 	margin-top: 15px;
+}
+
+label.error, label.valid {
+	padding: 3px 5px;
+	border-radius: 4px;
+	margin: 5px 0;
+}
+
+label.error {
+	background: $light-pink;
+}
+
+label.valid {
+	background: $dark-turq;
 }
