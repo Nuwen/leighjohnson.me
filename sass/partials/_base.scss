@@ -13,6 +13,7 @@ img {
 }
 
 a {
+	@include transition(all 0.3s ease-in-out);
 	:link, :visited {
 		text-decoration: none;
 		color: $link1;
@@ -60,17 +61,17 @@ hr {
 // Span colors
 .txt-wht {
 	font-weight: 700;
-	color: #fff;
+	color: #fff !important;
 }
 
 .txt-pnk {
 	font-weight: 700;
-	color: $light-pink;
+	color: $light-pink !important;
 }
 
 .txt-turq {
 	font-weight: 700;
-	color: $dark-turq;
+	color: $dark-turq !important;
 }
 
 // section tyles
@@ -81,7 +82,7 @@ hr {
 	padding: 45px 0;
 
 	h1 {
-		margin-bottom: 60px;
+		margin-bottom: 25px;
 	}
 
 }

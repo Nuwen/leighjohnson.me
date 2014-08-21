@@ -1,26 +1,49 @@
 
 .services-section{
+	text-align: center;
 	@extend %section-container-dark;
 	background: $light-pink;
 
 	h1 {
-		text-align: center;
 	}
+
+	blockquote {
+		p{font-size: 1em}
+		footer{font-weight: 700;
+			color: $nav-bg}
+		border-left: 5px solid lighten($dark-turq, 20%) !important;
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: 3em;
+		padding-top: 20px;
+		font-weight: 700;
+		color: $nav-bg;
+	}
+
 }
 
-.service-list{
+.achievement-list{
+	//browser reset
+	margin: 2em auto;
 	list-style: none;
 	li{
-		float: left;
+		width: 30%;
+		margin: 1em;
 		display: inline-block;
-		font-weight: 700;
-		font-size: 3.5em;
-		text-align: left;
+		@media screen and(max-width: $mama-bear){
+			width: 100%;
+			padding-right: 6em;
+		}
 	}
 	span {
-		font-size: 2em;
-		vertical-align: middle;
+		padding: 5px;
+		font-size: 5em;
 		color: $nav-bg;
+	}
+	p{
+		text-transform: uppercase;
+		font-size: 2.5em;
 	}
 }
 
@@ -28,13 +51,17 @@
 	text-align: center;
 
 	figure {
+		border: 3px solid #fff;
+		width: 280px;
+		height: 280px;
+		background: $dark-turq-a;
 		margin: 15px 30px;
 		display: inline-block;
 
-		img {
-			width: 200px;
-			height: 200px;
-		}
+		@include transition(all 1s ease-in-out)
+	}
+	figure:hover {
+		background: darken($dark-turq, 10%);
 	}
 
 	.title {
@@ -48,7 +75,7 @@
 		list-style: none;
 	}
 	ul li {
-		font-size: 2em;
+		font-size: 1.8em;
 		text-align: center;
 		margin: 0 2px;
 	}
@@ -58,3 +85,4 @@
 	}
 
 }
+

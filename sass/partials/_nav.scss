@@ -102,6 +102,7 @@ a.navbar-logo:hover {
 }
 
 .navbar-collapse {
+	margin-right: -30px;
 	border: 0 !important;
 	text-align: center;
 	box-shadow: none;
@@ -112,9 +113,12 @@ a.navbar-logo:hover {
 	}
 	@media screen and (max-width: $mama-bear){
 		ul li {
+			height: 60px;
 			font-size: 1.2em;
 			display: inline-block;
-			line-height: 80%;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin: 0;
 		}
 	}
 }

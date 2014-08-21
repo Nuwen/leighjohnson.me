@@ -118,12 +118,12 @@ $(document).ready(function() {
             padding: "15px 0px"
         }, 300))
     }), $(".about-section").waypoint(function() {
-        $("figure").addClass("flipInX animated")
+        $("figure").addClass("animated bounceInLeft")
     }, {
         offset: "50%",
         triggerOnce: !0
     }), $(".services-section").waypoint(function() {
-        $(".service-icons").addClass("flipInX animated")
+        $(".achievement-list").addClass("flipInX animated")
     }, {
         offset: "50%",
         triggerOnce: !0
