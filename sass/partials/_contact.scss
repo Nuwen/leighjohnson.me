@@ -49,7 +49,7 @@
 .form-control {
 	margin: 0 auto;
     display: block;
-    width: 50%;
+    width: 100%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -61,10 +61,6 @@
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-
-    @media screen and (max-width: $mama-bear) {
-    	width: 100%;
-    }
 }
 
 .form-horizontal button {
@@ -111,7 +107,7 @@
 
 label.error {
     color: #fff;
-    background: #b94a48;
+    background: $light-pink;
     padding: 3px 5px;
     border-radius: 4px;
     margin: 5px 0;
@@ -119,7 +115,7 @@ label.error {
 
 label.valid {
     color: #fff;
-    background: #5CB85C;
+    background: $dark-turq;
     padding: 3px 5px;
     border-radius: 4px;
     margin: 5px 0;
