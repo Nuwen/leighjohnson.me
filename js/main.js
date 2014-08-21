@@ -117,22 +117,23 @@ $(document).ready(function() {
         }, 300)) : "small" == $(".navbar-default").data("size") && ($(".navbar-default").data("size", "big"), $(".navbar-default").animate({
             padding: "15px 0px"
         }, 300))
-    }), $(".about-section").waypoint(function() {
-        $("figure").addClass("animated bounceInLeft")
+    }), $("#about-section").waypoint(function() {
+        $("#about-feature").addClass("animated flipInX")
     }, {
         offset: "50%",
         triggerOnce: !0
-    }), $(".services-section").waypoint(function() {
-        $(".achievement-list").addClass("flipInX animated")
+    }), 
+        $("#services-section").waypoint(function() {
+        $(".achievement-list").addClass("flipInX animated");
     }, {
         offset: "50%",
         triggerOnce: !0
-    }), $(".portfolio-section").waypoint(function() {
+    }), $("#portfolio-section").waypoint(function() {
         $(".grid-wrapper").addClass("bounceIn animated")
     }, {
         offset: "50%",
         triggerOnce: !0
-    }), $(".blog-teaser-section").waypoint(function() {
+    }), $("#blog-teaser-section").waypoint(function() {
         $("#blog-teaser").addClass("bounceIn animated")
     }, {
         offset: "50%",

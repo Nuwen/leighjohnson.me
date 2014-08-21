@@ -58,7 +58,6 @@
 		margin: 15px 30px;
 		display: inline-block;
 
-		@include transition(all 1s ease-in-out)
 	}
 	figure:hover {
 		background: darken($dark-turq, 10%);
