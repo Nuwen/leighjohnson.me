@@ -104,7 +104,7 @@ $(document).ready(function() {
         e.isotope({
             filter: "*",
             animationOptions: {
-                duration: 750,
+                duration: 850,
                 easing: "linear",
                 queue: !1
             }
@@ -124,7 +124,7 @@ $(document).ready(function() {
         triggerOnce: !0
     }), 
         $("#services-section").waypoint(function() {
-        $(".achievement-list").addClass("flipInX animated");
+        $(".achievement-list").addClass("fadeInUp animated");
     }, {
         offset: "50%",
         triggerOnce: !0
