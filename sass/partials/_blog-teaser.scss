@@ -1,4 +1,17 @@
 .blog-teaser-section {
+	text-align: center;
 	@extend %section-container-dark;
 	background: $dark-turq;
+
+	a {
+	text-decoration: none;
+	color: $nav-bg;
+	@include transition(all 0.3s ease-in-out);
+
+	}
+	a:active, a:hover {
+		color: #light-pink !important;
+		text-decoration: none;
+	}
+
 }

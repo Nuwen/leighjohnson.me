@@ -7,6 +7,20 @@
 	}
 }
 
+// Magnific Popup styles
+
+.mfp-title {
+	a{
+		font-size: 2em;
+		@include transition(all 0.3s ease-in-out);
+		text-decoration: none;
+		color: $link1;
+	:active, :hover {
+		color: $light-pink;
+	}
+	}
+}
+
 // Isotope grid
 
 #grid-controls-wrapper {
@@ -86,7 +100,14 @@
 		text-align: center;
 		border-radius: 4px;
 		@include transition(all 0.3s ease-in);
+
+	:hover {
+		.overlay img {
+			opacity: 0;
+		}
 	}
+	}
+
 
 	.overlay:hover {
 		opacity: 1;

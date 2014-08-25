@@ -1,9 +1,13 @@
+
+
 $(document).ready(function() {
     
+    //change menu toggle
     $(".navbar-toggle").click(function() {
         $('.navbar-toggle').toggleClass('icon-close');
          $('.navbar-toggle').toggleClass('icon-list');
     });
+
     $(".navbar").sticky({
         topSpacing: 0
     }), $("#main-menu").onePageNav({
@@ -76,7 +80,10 @@ $(document).ready(function() {
         removalDelay: 160,
         preloader: !1,
         fixedContentPos: !1
-    }), $(".blog-controls li a").click(function() {
+    }), 
+
+    /*Filter & Sort blog posts - to-be implemented
+        $(".blog-controls li a").click(function() {
         $("ul.blog-controls li.active").removeClass("active"), $(this).parent("li").addClass("active")
     }), $(window).load(function() {
         var e = $(".blog-wrapper");
@@ -104,12 +111,14 @@ $(document).ready(function() {
         e.isotope({
             filter: "*",
             animationOptions: {
-                duration: 850,
+                duration: 750,
                 easing: "linear",
                 queue: !1
             }
         })
-    }), $(function() {
+    }),
+    */
+     $(function() {
         $(".navbar-default").data("size", "big")
     }), $(window).scroll(function() {
         $(document).scrollTop() > 0 ? "big" == $(".navbar-default").data("size") && ($(".navbar-default").data("size", "small"), $(".navbar-default").animate({
