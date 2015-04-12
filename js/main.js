@@ -72,6 +72,9 @@ $(document).ready(function() {
             }
         })
     }), $(".popup-image").magnificPopup({
+        image: {
+            titleSrc: "caption",
+        },
         type: "image"
     }), $(".popup-vimeo").magnificPopup({
         disableOn: 700,
